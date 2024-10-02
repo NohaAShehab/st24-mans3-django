@@ -1,0 +1,29 @@
+
+1- create django project Marketplace
+
+2- create application products
+
+3- inside the products app
+    create page --> display info of products ?
+        each product  --> id , name, price, instock , description
+        --> display in table
+
+        in front of each product -->
+        button show
+
+        when you click on it --> display product details
+
+
+4- create app contact us
+0>contains page contact us
+
+5- create app aboutus
+contains page --> about us
+
+hints:
+    use template inheritance
+    use styling
+    use url files in each app
+    use url names.
+
+
