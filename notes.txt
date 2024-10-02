@@ -1,0 +1,3 @@
+when run server for the first time --
+dev phase --> django provide sqlite can be used until you configure the db
+-------------------------------------------------------------
