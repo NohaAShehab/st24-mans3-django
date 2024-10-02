@@ -6,7 +6,7 @@ urlpatterns = [
     path('intro', hello, name='myhello'),
     path('hi', hi, name='myhi'),
     path('list',students_list,name='mystudents_list' ),
-    path('profile/<int:id>',std_profile,name='myprofile'),
+    # path('profile/<int:id>',std_profile,name='myprofile'),
     path('home',home,name='students.home'),
-    path('profile',profile,name='myprofile' )
+    path('profile/<int:id>',profile,name='students.profile' ),
 ]

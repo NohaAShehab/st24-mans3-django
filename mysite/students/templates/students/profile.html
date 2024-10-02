@@ -11,5 +11,12 @@ This my content
 
 
 {% block content %}
-<h1> My name is Noha </h1>
+        <div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{student.name}}</h5>
+    <p class="card-text">{{student.grade}}</p>
+    <a href="{% url 'students.home' %}" class="btn btn-primary">Back to all students </a>
+  </div>
+</div>
 {% endblock %}

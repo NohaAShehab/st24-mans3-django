@@ -20,6 +20,13 @@ create folder templates
 when you try to get file from templates >??
 django searches for this file in the templates in the installed apps
 
+# display values in templates
+https://docs.djangoproject.com/en/5.1/topics/templates/#variables
+
+# for
+https://docs.djangoproject.com/en/5.1/ref/templates/builtins/#for
+
+
 
 
 

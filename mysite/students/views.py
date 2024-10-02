@@ -1,3 +1,5 @@
+from lib2to3.fixes.fix_input import context
+
 from django.shortcuts import render
 from django.http import HttpResponse
 
@@ -45,16 +47,30 @@ def std_profile(request, id):
     return HttpResponse("<h1 style='color:red'>Not Found</h1>")
 
 
+#
+# def home(request):
+#     # return with template
+#     return render(request, 'students/home.html')
 
+
+# def profile(request):
+#     return render(request, 'students/profile.html')
+
+
+
+# send data to the temp.
 def home(request):
     # return with template
-    return render(request, 'students/home.html')
+    return render(request, 'students/home.html',
+                  context={"students":students})
 
 
-def profile(request):
-    return render(request, 'students/profile.html')
+def profile(request, id):
+    stds = list(filter(lambda std: std['id'] == id, students))  # list
+    if stds:
+        return render(request, 'students/profile.html', context={"student":stds[0]})
 
-
+    return HttpResponse("<h1 style='color:red'>Not Found</h1>")
 
 
 
