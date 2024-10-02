@@ -1,3 +1,8 @@
 when run server for the first time --
 dev phase --> django provide sqlite can be used until you configure the db
 -------------------------------------------------------------
+
+1- write your first views and url
+https://docs.djangoproject.com/en/5.1/intro/tutorial01/
+
+2- create urls.py file inside each app then include it in urls.py of the project
