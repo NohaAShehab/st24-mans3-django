@@ -43,3 +43,25 @@ def std_profile(request, id):
     if stds:
         return HttpResponse(stds[0]['name'])
     return HttpResponse("<h1 style='color:red'>Not Found</h1>")
+
+
+
+def home(request):
+    # return with template
+    return render(request, 'students/home.html')
+
+
+def profile(request):
+    return render(request, 'students/profile.html')
+
+
+
+
+
+
+
+
+
+
+
+

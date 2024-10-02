@@ -6,3 +6,29 @@ dev phase --> django provide sqlite can be used until you configure the db
 https://docs.djangoproject.com/en/5.1/intro/tutorial01/
 
 2- create urls.py file inside each app then include it in urls.py of the project
+
+
+#####
+3- use templates
+https://docs.djangoproject.com/en/5.1/topics/templates/
+--> html, css , js
+template engine --> jinja2 ---> write python functionality inside html
+
+inside your app
+create folder templates
+
+when you try to get file from templates >??
+django searches for this file in the templates in the installed apps
+
+
+
+
+
+
+
+
+
+
+
+
+
